@@ -1,0 +1,20 @@
+def bmi_calculator(height, weight):
+  """Calculates the BMI of a person.
+
+  Args:
+    height: The height of the person in meters.
+    weight: The weight of the person in kilograms.
+
+  Returns:
+    The BMI of the person.
+  """
+
+  bmi = weight / (height ** 2)
+  return bmi
+
+
+if __name__ == "__main__":
+  height = float(input("Enter your height in meters: "))
+  weight = float(input("Enter your weight in kilograms: "))
+  bmi = bmi_calculator(height, weight)
+  print("Your BMI is:", bmi)
